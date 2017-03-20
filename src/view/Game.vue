@@ -1,7 +1,7 @@
 <template>
   <div class="game">
     <chessboard v-on:onPlay="resetChessboard" v-bind:chessData="chessboard" :player="player" hint="正在下棋" />
-    <chessboard class="manual" v-if="winMethod.length" v-bind:chessData="winMethod" :player="player" hint="获胜的方法"/>
+    <chessboard class="manual" v-if="winMethod.length" v-bind:chessData="winMethod" :player="player" hint="可获胜方法"/>
   </div>
 </template>
 

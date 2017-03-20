@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="bg"></div>
+    <div class="bg" :style="{backgroundImage:'url('+require('./assets/bg2.jpg')+')'}"></div>
     <router-view></router-view>
   </div>
 </template>
@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  background: #13CE66;
+  background: #eee;
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,7 @@ body {
   box-sizing: border-box;
 }
 .bg{
-  position: absolute;
+  position: fixed;
   top: 0;
   overflow: hidden;
   width: 100%;
@@ -37,6 +37,5 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url(./assets/bg.jpg);
 }
 </style>
